@@ -8,7 +8,7 @@ puts "How many players would like to participate? (0-2)"
 
 num_players = ""
 while num_players != "0" || num_players != "1" || num_players != 2
-  num_players = gets
+  num_players = gets.strip!
   binding.pry
 end
 
@@ -16,7 +16,7 @@ if num_players == "1"
   puts "Do you want to go first? (y/n)"
   first = ""
   while first != "y" || first != "n"
-    first = gets
+    first = gets.strip!
   end
 end
 

@@ -10,7 +10,8 @@ num_players = ""
 while num_players != "0" || num_players != "1" || num_players != 2
   num_players = gets
 end
-binding.pry
+
+puts "asdf"
 
 if num_players == "1"
   puts "Do you want to go first? (y/n)"

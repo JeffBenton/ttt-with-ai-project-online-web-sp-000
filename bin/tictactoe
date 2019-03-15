@@ -10,4 +10,10 @@ while num_players != "0" || num_players != "1" || num_players != 2
   num_players = gets
 end
 
-case num_players
+puts "Which player will go first and be 'X'? (1 or 2)"
+first_player = ""
+while first_player != "1" || first_player != "2"
+  first_player = gets
+end
+
+game = Game.new

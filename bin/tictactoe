@@ -10,4 +10,4 @@ while num_players != "0" || num_players != "1" || num_players != 2
   num_players = gets
 end
 
-
+case num_players

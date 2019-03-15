@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 
 require_relative '../config/environment'
+
+puts "Hello and welcome to TicTacToe"
+puts "How many players would like to participate? (0-2)"
+

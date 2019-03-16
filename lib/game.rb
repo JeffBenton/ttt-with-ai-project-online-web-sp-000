@@ -43,6 +43,7 @@ class Game
     while !over?
       turn
       board.display
+      puts "\n"
     end
     puts "Congratulations #{winner}!" if won?
     puts "Cat's Game!" if draw?

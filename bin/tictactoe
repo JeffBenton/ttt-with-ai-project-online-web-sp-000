@@ -11,7 +11,7 @@ game = ""
 while num_players = gets.chomp
   case num_players
   when "0"
-    game = Game.new()
+    game = Game.new(Players::Computer)
     break
   when "1"
     break

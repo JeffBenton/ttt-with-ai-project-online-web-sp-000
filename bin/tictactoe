@@ -38,4 +38,7 @@ end
 
 binding.pry
 
-game = Game.new
+game = ""
+case num_players
+  
+

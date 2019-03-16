@@ -37,5 +37,4 @@ while num_players = gets.chomp
   end
 end
 
-binding.pry
-
+game.play

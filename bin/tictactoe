@@ -24,7 +24,7 @@ end
 if num_players == "1"
   puts "Do you want to go first? (y/n)"
   first = ""
-  while first != "y" && first != "n"
+  while first = gets.chomp
     first = gets.strip!
   end
 end

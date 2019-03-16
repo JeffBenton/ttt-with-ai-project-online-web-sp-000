@@ -19,7 +19,7 @@ while num_players = gets.chomp
     while first = gets.chomp
       case first
       when "y"
-        game = Game.new(Players::Human.new("X"), Players:Computer.new("O"))
+        game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
       when "n"
         game = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
         break

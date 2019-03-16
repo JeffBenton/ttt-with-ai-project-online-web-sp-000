@@ -11,30 +11,28 @@ game = ""
 while num_players = gets.chomp
   case num_players
   when "0"
-    game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), )
+    game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
     break
   when "1"
+    puts "Do you want to go first? (y/n)"
+    first = ""
+    while first = gets.chomp
+      case first
+      when "y"
+        game = Game.new(Players::Human.new("X"), Players:Computer.new("O"))
+      when "n"
+        game = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
+        break
+      else
+        puts "Please enter y or n"
+      end
+    end
     break
   when "2"
+    game = Game.new(Players::Human.new("X"), Players::Human.new("O"))
     break
   else
     puts "Please enter a number between 0 and 2."
-  end
-end
-
-
-if num_players == "1"
-  puts "Do you want to go first? (y/n)"
-  first = ""
-  while first = gets.chomp
-    case first
-    when "y"
-      break
-    when "n"
-      break
-    else
-      puts "Please enter y or n"
-    end
   end
 end
 

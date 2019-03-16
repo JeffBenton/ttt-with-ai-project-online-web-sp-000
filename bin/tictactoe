@@ -7,9 +7,11 @@ puts "Hello and welcome to TicTacToe"
 puts "How many players would like to participate? (0-2)"
 
 num_players = ""
+game = ""
 while num_players = gets.chomp
   case num_players
   when "0"
+    game = Game.new()
     break
   when "1"
     break
@@ -37,8 +39,4 @@ if num_players == "1"
 end
 
 binding.pry
-
-game = ""
-case num_players
-  
 
